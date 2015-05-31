@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>The Personality Profile</title>
+<meta name="description" content="Take this four question surevy to the real you!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+
+<!-- Icons & Favicons -->
+<link rel="apple-touch-icon" href="assets/images/apple-icon-touch.png">
+<link rel="icon" href="assets/images/favicon.png">
+<!--[if IE]>
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <![endif]-->
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="assets/styles/css/app.css">
+<!-- Modernizr -->
+<script src="assets/js/modernizr.min.js"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+			function submitForm() {
+				$.ajax({type:'POST', url:'index.html', data:$('#PersonlityProfile').serialize(), success: function(response) {
+					$('#PersonlityProfile').find('.form_result').html(response);
+				}});
+				
+				return false;
+			}
+		</script>
+</head>
+
+<body>
+<div id="site-content"><!-- For Mobile Menu -->
+  
+  <header class="app-header" id="app-header">
+    <div class="container">
+      <div class="header-wrapper"> 
+        <!-- Logo -->
+        <div class="logo"> <a href="/"> <img src="assets/images/logo.png" alt="One Nexus" height="74" /> </a> </div>
+        <!-- Main-Nav -->
+        <nav class="app-nav" id="app-nav">
+          <ul>
+            <li> <a href="#">Header Link 1</a>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Header Link 2</a></li>
+            <li><a href="#">Header Link 3</a></li>
+          </ul>
+        </nav>
+        <!-- Mobile Menu Trigger Button --> 
+        <a class="nav-trigger max-bp3" href="#"></a> </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="container" id="main"> 
+    
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <ul>
+        <li><a href="#">One Nexus</a></li>
+        <li><a href="index.html">Index</a></li>
+      </ul>
+    </nav>
+    <h1>A Personality Profile</h1>
+    <p>This is a fun and entertaining Personality Profile.  Answer an handful of simple questions and recieve insight into your complex being. While amusing, this test is usually found to be quite insiteful.</p>
+    <p>Warning! This test can only effectively be taken once per lifetime.</p>
+    <hr class="line" />
+    <div class="span-12">
+      <div class="span-2"> </div>
+      <div class="span-8">
+        <form  id="PersonlityProfile" action="index.html" onsubmit="return submitForm();" class="form span-12">
+        
+        
+        
+         <!-- <p style="margin-bottom:  .5em;">
+          <fieldset class="row">
+            <div class="span-4 va-middle">
+            What is your your favorite color?
+            </div>
+            <div class="span-8 va-middle">
+              <input type="text" required placeholder="enter color" id="color">
+            </div>
+          </fieldset>
+          </p>
+        
+        
+          
+          
+          
+          
+          <p style="margin-bottom:  .5em;"> Enter three words that describe your favorite color:<br>
+          <fieldset class="row">
+            <label class="span-4 va-middle">
+              <input type="text" id="color-1" required placeholder="enter adjective 1" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="color-2" required placeholder="enter adjective 2" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="color-3" required placeholder="enter adjective 3" >
+            </label>
+          </fieldset>
+          </p>
+          <p style="margin-bottom:  .5em;">
+          <fieldset class="row">
+            <label class="span-4 va-middle"> What is your your favorite animal? </label>
+            <div class="span-8 va-middle">
+              <input type="text" required placeholder="enter animal" id="animal" required placeholder="enter animal" >
+            </div>
+          </fieldset>
+          </p>
+          <p style="margin-bottom:  .5em;"> Enter three words that describe your favorite animal:
+          <fieldset class="row">
+            <label class="span-4 va-middle">
+              <input type="text" id="animal-1" required placeholder="enter adjective 1" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="animal-2" required placeholder="enter adjective 2" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="animal-2" required placeholder="enter adjective 3" >
+            </label>
+          </fieldset>
+          </p>
+          <p style="margin-bottom:  .5em;"> Pretend you are standing beside a body of water.  Enter three words that describe the body of water:
+          <fieldset class="row">
+            <label class="span-4 va-middle">
+              <input type="text" id="water-1" required placeholder="enter adjective 1" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="water-2" required placeholder="enter adjective 2" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="water-3" required placeholder="enter adjective 3" >
+            </label>
+          </fieldset>
+          </p>-->
+          <p style="margin-bottom:  .5em;"> Imagine you are alone in a white room.  Enter three words to describe the white room:
+          <fieldset class="row">
+            <label class="span-4 va-middle">
+              <input type="text" id="whiteroom-1" required placeholder="adjective 1" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="whiteroom-2" required placeholder="adjective 2" >
+            </label>
+            <label class="span-4 va-middle">
+              <input type="text" id="whiteroom-3" required placeholder="adjective 3" >
+            </label>
+          </fieldset>
+          </p>
+          <span class="span-9 va-middle text-right">
+          <button  class="button-brand-1" type="submit" name="submit" value="Submit">Results</button>
+          </span>
+          <div class="form_result">xxxx</div>
+        </form>
+      </div>
+      <div class="span-2"> </div>
+    </div>
+  </div>
+  
+  <footer class="app-footer">
+    <div class="container">
+      <div class="footer-wrapper"> 
+        <!-- Copyright Section -->
+        <h4 class="copyright">© Your Website 2014</h4>
+        <!-- Footer Navigation -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Footer Link 1</a></li>
+            <li><a href="#">Footer Link 2</a></li>
+            <li><a href="#">Footer Link 3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- end #site-content --> 
+
+<!-- UI --> 
+
+<!-- Scroll to top icon--> 
+<a class="icon-border scroll-top" href="#site-content"> <i class="fa fa-angle-up"></i> </a> 
+
+<!-- Flyout Nav Trigger --> 
+<span class="icon-brand-1 flyout-trigger max-break-3" id="flyout-trigger"> <i class="fa fa-bars nav-open"></i> <i class="fa fa-times nav-close"></i> </span> 
+
+<!-- Flyout Nav -->
+<nav class="flyout-container" id="flyout"></nav>
+
+<!-- Site Overlay -->
+<div class="site-overlay" id="site-overlay"></div>
+
+<!-- SCRIPTS --> 
+
+<!-- jQuery --> 
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>--> 
+<script src="assets/js/jquery.min.js"></script> 
+
+<!-- Interactive Elements/Modules --> 
+<script src="assets/js/accordion.js"></script> 
+<script src="assets/js/carousel.js"></script> 
+<script src="assets/js/modal.js"></script> 
+<script src="assets/js/flyout-navigation.js"></script> 
+<script src="assets/js/tabs.js"></script> 
+<script src="assets/js/tooltip.js"></script> 
+
+<!-- General --> 
+<script src="assets/js/adaptive-columns.js"></script> 
+<script src="assets/js/global.js"></script>
+</body>
+</html>
