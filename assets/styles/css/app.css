@@ -65,7 +65,7 @@ audio:not([controls]) {
 }
 
 /*
- * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
+ * Addresses stysling for `hidden` attribute not present in IE7/8/9, FF3, S4.
  * Known issue: no IE6 support.
  */
 
@@ -2355,7 +2355,7 @@ Shape Variants
 ================================================================ */
 
 a {
-  color: #008db6;
+  color: #FF0000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-decoration: none;
